@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO — Meta tags principais -->
+    <title>Pedro Henrique · Dev</title>
+    <meta
+      name="description"
+      content="Pedro Henrique — Desenvolvedor autônomo. Transformo ideias em produtos digitais com código limpo e entrega real."
+    />
+    <meta name="author" content="Pedro Henrique" />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pedro Henrique · Dev" />
+    <meta
+      property="og:description"
+      content="Transformo ideias em produtos digitais. Código limpo, entrega real."
+    />
+    <meta property="og:url" content="https://php-tech.vercel.app" />
+
+    <!-- Instagram / Social sharing -->
+    <meta property="og:site_name" content="Pedro Henrique Pereira" />
+
+    <!-- Favicon via emoji -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>"
+    />
+
+    <!-- Performance — preconnect para Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Canvas de fundo animado -->
+    <canvas id="grid-canvas"></canvas>
+    <div class="overlay"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <!-- Cabeçalho -->
+      <header class="header">
+        <div class="badge">disponível para projetos</div>
+        <h1 class="name">Pedro<br /><span class="accent">Henrique.</span></h1>
+        <p class="tagline">
+          Transformo ideias em produtos digitais. Código limpo, entrega real.
+        </p>
+      </header>
+
+      <div class="divider"></div>
+
+      <!-- Links -->
+      <nav class="links" aria-label="Links principais">
+        <!-- Portfólio -->
+        <a
+          class="link-item"
+          href="https://php-tech.vercel.app"
+          target="_blank"
+          rel="noopener"
+          aria-label="Acessar portfólio"
+        >
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <path d="M14 17h7M17.5 14v7" />
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">Portfólio</span>
+            <span class="link-sub">php-tech.vercel.app</span>
+          </div>
+          <div class="link-arrow">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10" /></svg>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          class="link-item"
+          href="https://instagram.com/pedrohenrique"
+          target="_blank"
+          rel="noopener"
+          aria-label="Seguir no Instagram"
+        >
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="17.5" cy="6.5" r="1.5" />
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">Instagram</span>
+            <span class="link-sub">@pedrohenrique</span>
+          </div>
+          <div class="link-arrow">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10" /></svg>
+          </div>
+        </a>
+
+        <!-- TikTok -->
+        <a
+          class="link-item"
+          href="https://tiktok.com/@pedrohenrique"
+          target="_blank"
+          rel="noopener"
+          aria-label="Seguir no TikTok"
+        >
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">TikTok</span>
+            <span class="link-sub">@pedrohenrique</span>
+          </div>
+          <div class="link-arrow">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10" /></svg>
+          </div>
+        </a>
+
+        <!-- Solicitar Orçamento (WhatsApp) -->
+        <a
+          class="link-item"
+          href="https://wa.me/5534999646334?text=Ol%C3%A1%2C+Pedro!+Gostaria+de+solicitar+um+or%C3%A7amento."
+          target="_blank"
+          rel="noopener"
+          aria-label="Solicitar orçamento via WhatsApp"
+        >
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              />
+            </svg>
+          </div>
+          <div class="link-text">
+            <span class="link-label">Solicitar Orçamento</span>
+            <span class="link-sub">via whatsapp · resposta rápida</span>
+          </div>
+          <div class="link-arrow">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </div>
+        </a>
+      </nav>
+
+      <!-- Rodapé -->
+      <footer class="footer">
+        &copy; 2026 Pedro Henrique · <span>Dev Autônomo</span>
+      </footer>
+    </div>
+
+    <!-- Script do canvas carregado com defer para não bloquear o render -->
+    <script defer src="js/grid-canvas.js"></script>
+  </body>
+</html>
